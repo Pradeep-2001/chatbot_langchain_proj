@@ -19,7 +19,7 @@ prompt = ChatPromptTemplate.from_messages(
 )
 
 st.title("Langchain Project")
-input_text= st.text_input("What is langchain?")
+input_text= st.text_input("Enter your query")
 
 llm= ChatOpenAI(model="openai/gpt-oss-20b:free",api_key=openai_api_key,max_tokens=200)
 output_parser= StrOutputParser()
